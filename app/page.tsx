@@ -95,14 +95,17 @@ export default function Home() {
                                   <ModalBody>
                                       <p>
                                           Начнем с основного:
-                                          <br/>Меня зовут Виктор, на момент написания мне 14 лет, родился я
-                                          13.04.2011г в городе, где живу и по сей день, а именно Астрахань.
-                                          <Divider />
+                                          <br/>Я - uertyk_ , активный творец в сфере рендеров Minecraft стилистики.
+                                          <br/>
+                                          <br/>
+                                          <Divider/>
                                           <br/>
                                           <p>
                                               Окей, а теперь то, чем я занимаюсь!
-                                              <br/>Во первых я активно изучаю программы Adobe After Effects/Premier Pro/Photoshop + Blender + кодинг на intelij IDEA
-                                              <br/>Во вторых, я позиционирую себя, как рендермейкера, дизайнера и аниматора (в Minecraft стилистике, кроме дизайна)
+                                              <br/>Во первых я активно изучаю программы Adobe After Effects/Premier
+                                              Pro/Photoshop + Blender + кодинг на intelij IDEA
+                                              <br/>Во вторых, я позиционирую себя, как рендермейкера, дизайнера и
+                                              аниматора (в Minecraft стилистике, кроме дизайна)
                                           </p>
                                       </p>
                                   </ModalBody>
@@ -121,64 +124,65 @@ export default function Home() {
           <Divider className="my-4" />
       </div>
 
-      <div className="flex gap-3">
-          <Card className="max-w-[600px]">
-              <CardHeader className="flex gap-3">
-                  <Image
-                      isBlurred
-                      alt="Telegram"
-                      height={40}
-                      radius="sm"
-                      src="https://uertyk.github.io/huh/tg.png"
-                      width={40}
-                  />
-                  <div className="flex flex-col">
-                      <p className="text-md">Telegram</p>
-                      <p className="text-small text-default-500">Мой главный тгк, с новостями!</p>
-                  </div>
-                  <div className="flex flex-col">
-                      <Link href="https://t.me/uertykk">
-                          <Button
-                              variant="shadow"
-                              className="bg-gradient-to-tr from-indigo-500 to-indigo-400 text-white shadow-lg"
-                              radius="full"
-                          >
-                              Узнать новости
-                          </Button>
-                      </Link>
-                  </div>
-              </CardHeader>
-          </Card>
-
-          <Card className="max-w-[600px]">
-              <CardHeader className="flex gap-3">
-                  <Image
-                      isBlurred
-                      alt="Discord сервер"
-                      height={40}
-                      radius="sm"
-                      src="https://uertyk.github.io/huh/ds.png"
-                      width={40}
-                  />
-                  <div className="flex flex-col">
-                      <p className="text-md">Discord сервер</p>
-                      <p className="text-small text-default-500">Discord сервер XL-servers</p>
-                  </div>
-                  <div className="flex flex-col">
-                      <Link href="https://discord.gg/zFkXA9ETq5">
-                          <Button
-                              variant="shadow"
-                              className="bg-gradient-to-tr from-indigo-800 to-indigo-700 text-white shadow-lg"
-                              radius="full"
-                          >
-                              Перейти в сообщество
-                          </Button>
-                      </Link>
-                  </div>
-              </CardHeader>
-          </Card>
-      </div>
-      <div className="flex gap-3">
+        <div className="flex gap-3">
+            <Card className="max-w-[600px]">
+                <CardHeader className="flex gap-3">
+                    <Image
+                        isBlurred
+                        alt="Telegram"
+                        height={40}
+                        radius="sm"
+                        src="https://uertyk.github.io/huh/tg.png"
+                        width={40}
+                    />
+                    <div className="flex flex-col">
+                        <p className="text-md">Telegram</p>
+                        <p className="text-small text-default-500">Мой главный тгк, с новостями!</p>
+                    </div>
+                    <div className="flex flex-col">
+                        <Link href="https://t.me/uertykk">
+                            <Button
+                                variant="shadow"
+                                className="bg-gradient-to-tr from-indigo-500 to-indigo-400 text-white shadow-lg"
+                                radius="full"
+                            >
+                                Узнать новости
+                            </Button>
+                        </Link>
+                    </div>
+                </CardHeader>
+            </Card>
+        </div>
+            <div className="flex gap-3">
+                <Card className="max-w-[600px]">
+                    <CardHeader className="flex gap-3">
+                        <Image
+                            isBlurred
+                            alt="Discord сервер"
+                            height={40}
+                            radius="sm"
+                            src="https://uertyk.github.io/huh/ds.png"
+                            width={40}
+                        />
+                        <div className="flex flex-col">
+                            <p className="text-md">Discord сервер</p>
+                            <p className="text-small text-default-500">Discord сервер XL-servers</p>
+                        </div>
+                        <div className="flex flex-col">
+                            <Link href="https://discord.gg/zFkXA9ETq5">
+                                <Button
+                                    variant="shadow"
+                                    className="bg-gradient-to-tr from-indigo-800 to-indigo-700 text-white shadow-lg"
+                                    radius="full"
+                                >
+                                    Перейти в сообщество
+                                </Button>
+                            </Link>
+                        </div>
+                    </CardHeader>
+                </Card>
+            </div>
+        <div className="flex gap-3">
             <Card className="max-w-[600px]">
                 <CardHeader className="flex gap-3">
                     <Image
@@ -206,38 +210,40 @@ export default function Home() {
                     </div>
                 </CardHeader>
             </Card>
+            </div>
+            <div className="flex gap-3">
 
-          <Card className="max-w-[600px]">
-              <CardHeader className="flex gap-3">
-                  <Image
-                      isBlurred
-                      alt="Twitch канал"
-                      height={40}
-                      radius="sm"
-                      src="https://uertyk.github.io/huh/twich.png"
-                      width={40}
-                  />
-                  <div className="flex flex-col">
-                      <p className="text-md">Twitch</p>
-                      <p className="text-small text-default-500">Twitch канал с моими стримами!</p>
-                  </div>
-                  <div className="flex flex-col">
-                      <Link href="https://m.twitch.tv/uertyk_/home">
-                          <Button
-                              variant="shadow"
-                              className="bg-gradient-to-tr from-purple-700 to-purple-600 text-white shadow-lg"
-                              radius="full"
-                          >
-                              Смотреть стримы
-                          </Button>
-                      </Link>
-                  </div>
-              </CardHeader>
-          </Card>
-        </div>
+                <Card className="max-w-[600px]">
+                    <CardHeader className="flex gap-3">
+                        <Image
+                            isBlurred
+                            alt="Twitch канал"
+                            height={40}
+                            radius="sm"
+                            src="https://uertyk.github.io/huh/twich.png"
+                            width={40}
+                        />
+                        <div className="flex flex-col">
+                            <p className="text-md">Twitch</p>
+                            <p className="text-small text-default-500">Twitch канал с моими стримами!</p>
+                        </div>
+                        <div className="flex flex-col">
+                            <Link href="https://m.twitch.tv/uertyk_/home">
+                                <Button
+                                    variant="shadow"
+                                    className="bg-gradient-to-tr from-purple-700 to-purple-600 text-white shadow-lg"
+                                    radius="full"
+                                >
+                                    Смотреть стримы
+                                </Button>
+                            </Link>
+                        </div>
+                    </CardHeader>
+                </Card>
+            </div>
 
-        <div className="mt-8">
-        </div>
+            <div className="mt-8">
+            </div>
     </section>
-  );
+);
 }
