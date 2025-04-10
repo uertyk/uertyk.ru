@@ -2,6 +2,8 @@
 
 import {cn} from "@heroui/react";
 
+import React from "react";
+
 import {
   Navbar as HeroUINavbar,
   NavbarContent,
@@ -32,6 +34,11 @@ import {
 import {Dropdown, DropdownItem, DropdownMenu, DropdownTrigger } from "@heroui/react";
 
 export const Navbar = () => {
+  const menuItems = [
+    "Домой",
+    "Портфолио",
+  ];
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const searchInput = (
     <Input
       aria-label="Search"
@@ -54,7 +61,7 @@ export const Navbar = () => {
   );
 
   return (
-    <HeroUINavbar maxWidth="xl" position="sticky">
+    <HeroUINavbar maxWidth="xl" position="sticky" onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
@@ -139,8 +146,6 @@ export const Navbar = () => {
           ))}
         </div>
       </NavbarMenu>
-        <NavbarMenu>
-        </NavbarMenu>
     </HeroUINavbar>
   );
 };
