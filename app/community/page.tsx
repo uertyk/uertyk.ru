@@ -5,6 +5,7 @@ import Imagen from 'next/image';
 import draca from '@/videos/draca.mp4.json';
 // @ts-ignore
 import Video from 'next-video';
+import {UserTwitterCard} from '@/components/cards';
 
 // ALL AND MAIN
 import { title } from "@/components/primitives";
@@ -23,56 +24,7 @@ import {
     Link} from "@heroui/react";
 import React from "react";
 
-export const UserKiviCard = () => {
-    const [isFollowed, setIsFollowed] = React.useState(false);
-
-    return (
-        <Card className="max-w-[300px] border-none bg-transparent" shadow="none">
-            <CardHeader className="justify-between">
-                <div className="flex gap-3">
-                    <Avatar
-                        isBordered
-                        radius="full"
-                        size="md"
-                        src="https://images.unsplash.com/broken"
-                    />
-                    <div className="flex flex-col items-start justify-center">
-                        <h4 className="text-small font-semibold leading-none text-default-600">KiviK</h4>
-                        <h5 className="text-small tracking-tight text-default-500">@KiviKscreenager</h5>
-                    </div>
-                </div>
-                <Button
-                    className={isFollowed ? "bg-transparent text-foreground border-default-200" : ""}
-                    color="primary"
-                    radius="full"
-                    size="sm"
-                    variant={isFollowed ? "bordered" : "solid"}
-                    onPress={() => setIsFollowed(!isFollowed)}
-                >
-                    {isFollowed ? "отписаться" : "Подписаться"}
-                </Button>
-            </CardHeader>
-            <CardBody className="px-3 py-0">
-                <p className="text-small pl-px text-default-500">
-                    KiviKscreenager, самая активная девушка, а так же администратор XL-servers
-                </p>
-            </CardBody>
-            <CardFooter className="gap-3">
-                <div className="flex gap-1">
-                    <p className="font-semibold text-default-600 text-small">0</p>
-                    <p className=" text-default-500 text-small">Подписок</p>
-                </div>
-                <div className="flex gap-1">
-                    <p className="font-semibold text-default-600 text-small">0</p>
-                    <p className="text-default-500 text-small">Подписчиков</p>
-                </div>
-            </CardFooter>
-        </Card>
-    );
-};
-
 export default function AboutPage() {
-    const [isFollowed, setIsFollowed] = React.useState(false);
 
     return (
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-1">
@@ -103,7 +55,7 @@ export default function AboutPage() {
                               />
                           </PopoverTrigger>
                           <PopoverContent className="p-1">
-                              <UserKiviCard />
+                              <UserTwitterCard />
                           </PopoverContent>
                       </Popover>
                   </div>
