@@ -5,7 +5,7 @@ import Imagen from 'next/image';
 import draca from '@/videos/draca.mp4.json';
 // @ts-ignore
 import Video from 'next-video';
-import pooster from '../public/images/awesome-poster.jpg';
+import awesomePoster from '../public/images/awesome-poster.jpg';
 import {UserTwitterCard} from '@/components/cards';
 
 // ALL AND MAIN
