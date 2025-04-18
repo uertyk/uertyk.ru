@@ -99,13 +99,6 @@ export default function AboutPage() {
                 </CardBody>
             </Card>
             <Video src={draca}>
-      <Image 
-        slot="poster" 
-        src={awesomePoster}
-        placeholder="blur"
-        alt="Some peeps doing something awesome"
-      />
-    </Video>
         </section>
     );
 }
