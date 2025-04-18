@@ -5,6 +5,7 @@ import Imagen from 'next/image';
 import draca from '@/videos/draca.mp4.json';
 // @ts-ignore
 import Video from 'next-video';
+import pooster from '../public/images/awesome-poster.jpg';
 import {UserTwitterCard} from '@/components/cards';
 
 // ALL AND MAIN
@@ -97,6 +98,14 @@ export default function AboutPage() {
                     <p>Что-то на тестовом, мне очень нравится новое сообщество, даа)</p>
                 </CardBody>
             </Card>
+            <Video src={draca}>
+      <Image 
+        slot="poster" 
+        src={pooster}
+        placeholder="blur"
+        alt="Some peeps doing something awesome"
+      />
+    </Video>
         </section>
     );
 }
