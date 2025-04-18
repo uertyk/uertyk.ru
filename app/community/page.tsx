@@ -101,7 +101,7 @@ export default function AboutPage() {
             <Video src={draca}>
       <Image 
         slot="poster" 
-        src={pooster}
+        src={awesomePoster}
         placeholder="blur"
         alt="Some peeps doing something awesome"
       />
