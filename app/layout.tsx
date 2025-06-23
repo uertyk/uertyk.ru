@@ -8,6 +8,7 @@ import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
+import {Divider} from "@heroui/divider";
 
 export const metadata: Metadata = {
   title: {
@@ -48,7 +49,12 @@ export default function RootLayout({
               {children}
             </main>
             <footer className="w-full flex items-center justify-center py-3">
-                <span className="text-default-600">uertyk_ 2025</span>
+                <div className="max-w-md">
+                  <Divider className="my-4"/>
+                  <div className="space-y-1">
+                    <p className="text-small text-default-400">uertyk_ prod. 2025</p>
+                  </div>
+                </div>
             </footer>
           </div>
         </Providers>

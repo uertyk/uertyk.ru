@@ -2,6 +2,7 @@
 
 import React from "react";
 
+import {Divider} from "@heroui/divider";
 import {
   Navbar as HeroUINavbar,
   NavbarContent,
@@ -63,6 +64,11 @@ export const Navbar = () => {
             <Link color="foreground" href="/portfolio">
               Портфолио
             </Link>
+          </NavbarItem>
+          <NavbarItem>
+             <Link color="foreground" href="/manage">
+               Сообщества
+             </Link>
           </NavbarItem>
         </NavbarContent>
 
