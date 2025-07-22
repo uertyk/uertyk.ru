@@ -65,11 +65,6 @@ export const Navbar = () => {
               Портфолио
             </Link>
           </NavbarItem>
-          <NavbarItem>
-             <Link color="foreground" href="/manage">
-               Сообщества
-             </Link>
-          </NavbarItem>
         </NavbarContent>
 
         <NavbarContent justify="end">

@@ -52,7 +52,7 @@ export default function RootLayout({
                 <div className="max-w-md">
                   <Divider className="my-4"/>
                   <div className="space-y-1">
-                    <p className="text-small text-default-400">uertyk_ prod. 2025</p>
+                    <p className="text-small text-default-400">uertyk_ 2025</p>
                   </div>
                 </div>
             </footer>
